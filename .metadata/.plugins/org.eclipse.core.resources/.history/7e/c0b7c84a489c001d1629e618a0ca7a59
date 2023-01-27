@@ -1,0 +1,16 @@
+package ByteBankEncapsulado;
+
+public class Valores {
+
+	public static void main(String[] args) {
+		
+		Conta conta = new Conta();
+		
+		
+//		Conta esta inconsistente
+		conta.setAgencia(-50);
+		conta.setNumero(-150);
+		
+	}
+	
+}

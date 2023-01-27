@@ -1,0 +1,22 @@
+
+import java.util.Scanner;
+
+
+/**
+ * @author msr
+ *
+ */
+public class EntradaDeDados {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		Scanner sc
+		
+
+	}
+
+}

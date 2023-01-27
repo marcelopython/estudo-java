@@ -1,0 +1,64 @@
+package ByteBankEncapsulado;
+
+
+public class Conta {
+
+	private double saldo;
+	
+	private int agencia ;
+	
+	private int number;
+	
+	Cliente titular;
+	
+	public double getSaldo() {
+		return this.saldo;
+	}
+
+	public int getNumero() {
+		return this.number;
+	}
+	
+	public Conta setNumero(int number) {
+		
+		if(number < 0) {
+			
+		}
+		
+		this.number = number;
+
+	}
+	
+	void deposita(double valor) {
+		this.saldo += valor;
+	}
+	
+	public boolean saca(double valor) {
+		
+		if(this.saldo >= valor) {
+			this.saldo -= valor;
+			return true;
+		}
+		
+		return false;
+		
+	}
+	
+	public boolean transfere(double valor, Conta destino) {
+		
+		boolean sacaContaDestino = destino.saca(valor);
+		
+		if(sacaContaDestino) {
+			this.deposita(valor);
+			return true;
+		}
+		
+		return false;
+	}
+
+}
+
+
+
+
+

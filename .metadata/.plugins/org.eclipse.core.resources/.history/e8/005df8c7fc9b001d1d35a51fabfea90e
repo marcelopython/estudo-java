@@ -1,0 +1,34 @@
+package ByteBank;
+
+public class Metodo {
+
+	public static void main(String[] args) {
+
+		Conta conta = new Conta();
+		
+		conta.deposita(50);
+		
+		System.out.println(conta.saldo);
+		
+		double valorParaSacar = 200.0;
+		
+		boolean sacar = conta.saca(valorParaSacar);
+		
+		System.out.println(sacar);
+		
+		if(!sacar) {
+			System.out.println("Não possue saldo suficiente para sacar o valor de " + valorParaSacar);
+		}
+
+		System.out.println(conta.saldo);
+		
+
+		Conta contaMarcelo = new Conta();
+		
+		contaMarcelo.deposita(5000);
+		
+		
+		
+	}
+	
+}

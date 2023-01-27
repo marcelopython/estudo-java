@@ -1,0 +1,17 @@
+package ByteBank;
+
+public class Metodo {
+
+	public static void main(String[] args) {
+		
+//		System.out.println(args);
+		
+		Conta conta = new Conta();
+		
+		conta.deposita(50);
+		
+		System.out.println(conta.saldo);
+		
+	}
+	
+}

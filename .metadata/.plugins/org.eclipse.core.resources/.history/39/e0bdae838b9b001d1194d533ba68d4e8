@@ -1,0 +1,14 @@
+package ByteBank;
+
+public class CriaConta {
+
+	public static void main(String[] agrs) {
+		
+		Conta primeiraConta = new Conta();
+		
+		primeiraConta.saldo = 200;
+		
+		
+	}
+	
+}

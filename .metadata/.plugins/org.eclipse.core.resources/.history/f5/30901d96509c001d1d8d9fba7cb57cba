@@ -1,0 +1,14 @@
+package BytBankHerdado;
+
+public class TestFuncionario {
+
+	public static void main(String[] args) {
+		
+		Funcionario funcionario = new Funcionario();
+		
+//		funcionario 
+		
+		
+	}
+	
+}

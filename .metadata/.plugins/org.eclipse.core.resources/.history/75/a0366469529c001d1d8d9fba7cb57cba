@@ -1,0 +1,25 @@
+package BytBankHerdado;
+
+public class Teste {
+
+	public static void main(String[] args) {
+
+		FuncionarioTeste f1 = new FuncionarioTeste();
+		f1.setNome("Nico santos");
+		f1.setCpf("222.222.222-22");
+		f1.setSalario(3000.0);
+		f1.setTipo(1);
+		
+		System.out.println(f1.getBonificacao());
+		
+
+		FuncionarioTeste f1 = new FuncionarioTeste();
+		f1.setNome("Nico santos");
+		f1.setCpf("222.222.222-22");
+		f1.setSalario(5000.0);
+		f1.setTipo(2);
+		
+		System.out.println(f1.getBonificacao());
+	}
+
+}

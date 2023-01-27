@@ -1,0 +1,119 @@
+
+
+
+O que e uma Jvm (Java Virtual machine)
+	- Vantagem da máquina virtual
+		- Não e nesecessario reconplicar para diferentes plataforma
+		- COmo tudo passa pela JTM, é possivel obter metricas e trabalhar com otimização
+		- Gabarge collection
+		- Principio WORA
+			- Esceve uma unica vez
+			
+	- E uma camada intermediario entreo sistema operacional e a aplicação.
+	- A aplicaçõa se comunica apenas com a JVM
+	
+	Bytecode 
+		- O bytecode é uma linguagem entendida pela JVM 
+		- A geração do bytecode é feita através da compilação do código java
+
+A JVM é uma Especificação
+	- Diversas empresa implementam a JVM
+		- Oracle, IBM, etc.
+	- É possível trocar de JVm sem a necessidade de recompliar os códigos das aplicações
+
+Performace
+	- A JVM usa dois elementos para otimizar a performace
+		- HotSpot
+			- idenifica código bastante executado
+		- JIT (Just in TIme Compiler)
+			- Compia o código identificado pelo HotSpot para instruções nativas da plataforma.
+
+Mito da performace
+	- "Java é uma linguagem com baixa performace"
+	- Exsitem estudo que provam que java pode ser mais rápido que c ou c++
+	
+	
+	
+Ramificações 
+	Java SE (Standard Edition)
+		- Base do java
+		- Ambiente de execução de bibliotexas comuns 
+		
+	Java EE (Enterprose Edition)
+		- Aplicalções corporativas e internet
+		
+	Java ME (Micro Edition)
+		- Dispositivos móveis
+	
+	
+Onde usar?
+
+	- Aplicações de médio e grande porte
+	- Aplicações que virão a ser expandir no futuro
+	- Ambientes de diferentes plataformas
+
+onde não usar?
+	Pequenas aplicações ocm poucos devs
+
+
+Nomelcatura
+	JVM (Java Virtual Machine)
+		Máquina virutal do java
+		Instalar apenas a JVM não é possível
+		
+	JRE (Java Runtime Environment)
+		JVM + bibliotecas
+		Utilizada para executar aplicações Java
+		
+	JDK (Java Development kit)
+		JRE + kit completo de desenvolvimento
+		Utilizado pelos desenvolvedores para compilar e executar aplicações Java
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+

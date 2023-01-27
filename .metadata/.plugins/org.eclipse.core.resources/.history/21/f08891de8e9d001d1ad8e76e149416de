@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class TestString {
+
+	public static void main(String[] args) {
+		
+		
+		 Scanner input = new Scanner(System.in);
+		
+		 input.close();
+		 
+		String original = "abcde FHGIJ ABC abac DEFG	";
+		
+		String s01 = original.toLowerCase();
+		
+		System.out.println(s01);
+
+	}
+
+}

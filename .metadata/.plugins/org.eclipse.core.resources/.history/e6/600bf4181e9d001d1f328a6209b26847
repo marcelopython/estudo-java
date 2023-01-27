@@ -1,0 +1,15 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		double x = 3.0;
+		double y = 4.0;
+		double z = -4.0;
+		double A, B, C;
+		
+		A = Math.sqrt(x);
+		
+	}
+	
+}

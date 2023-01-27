@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class TestString {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+
+		String entrada = input.nextLine();
+//		 String entrada = "abcde FHGIJ ABC abac DEFG	"; 
+
+		input.close();
+
+		String s01 = entrada.toLowerCase();
+		
+		String s02 = entrada.toUpperCase();
+		
+		
+		System.out.println("toLowerCase: "+s01);
+
+	}
+
+}

@@ -1,0 +1,9 @@
+JRE -> é o ambiente de execução
+
+JDK -> são as ferramentodas de desenvolvimento junto com o ambiente de execução
+
+JDK = JRE + ferramentas de desenvolvimento
+
+JRE = JVM + bibliotecas
+
+JVM -> é executar o bytecode

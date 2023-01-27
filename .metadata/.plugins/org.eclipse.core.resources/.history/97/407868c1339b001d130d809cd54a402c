@@ -1,0 +1,15 @@
+package variaveisEFluxos;
+
+public class Lacos {
+	
+	public static void main(String[] args) {
+		
+		for(int multiplicador = 1; multiplicador <= 10; multiplicador++) {
+			
+			for(int contador <= 10; contador <= 10; contador++)
+			
+		}
+		
+	}
+
+}

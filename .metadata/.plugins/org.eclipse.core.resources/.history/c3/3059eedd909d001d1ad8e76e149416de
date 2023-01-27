@@ -1,0 +1,12 @@
+
+public class Splite {
+
+	public static void main(String[] args) {
+		
+		String s = "potato apple lemon";
+		
+		String[] array = s.split(" ");
+		
+	}
+	
+}

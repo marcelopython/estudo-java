@@ -1,0 +1,21 @@
+package variaveisEFluxos;
+
+public class Fatorial {
+
+	public static void main(String[] args) {
+		
+		for(int n = 1; n <= 10; n++) {
+			
+
+			for(int fatorial = 1; fatorial <= n; fatorial++) {
+				
+				System.out.print(fatorial);
+				System.out.print(" ");
+				
+			}	
+			
+		}
+		
+	}
+	
+}

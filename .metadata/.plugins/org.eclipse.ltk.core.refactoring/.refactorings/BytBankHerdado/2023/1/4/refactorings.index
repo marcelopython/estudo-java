@@ -1,0 +1,8 @@
+1674610298258	Move compilation unit
+1674610314933	Encapsulate field 'nome'
+1674610322979	Encapsulate field 'cpf'
+1674610330903	Encapsulate field 'salario'
+1674610905267	Copy compilation unit
+1674610926130	Rename type 'Funcionario2'
+1674610980079	Encapsulate field 'tipo'
+1674611147544	Rename compilation unit 'FuncionarioTest.java'

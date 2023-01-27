@@ -1,0 +1,11 @@
+package ByteBankComposto;
+
+public class ContaSemCliente {
+
+	public static void main(String[] args) {
+		
+		Conta contaDoMarcelo = new Conta();
+		
+	}
+	
+}

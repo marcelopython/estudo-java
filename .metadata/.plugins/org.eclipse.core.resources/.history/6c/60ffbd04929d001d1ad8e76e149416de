@@ -1,0 +1,15 @@
+package application;
+
+public class Program {
+
+	public static void main(String[] agrs) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double xA, xB, xC, yA, yB, yC;
+		
+		System.out.println();
+		
+	}
+	
+}

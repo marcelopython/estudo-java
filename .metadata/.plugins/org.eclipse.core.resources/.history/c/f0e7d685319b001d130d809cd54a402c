@@ -1,0 +1,15 @@
+package variaveisEFluxos;
+
+public class While {
+
+	public static void main(String[] args) {
+		
+		while(contador < 10) {
+			
+			
+			
+		}
+		
+	}
+	
+}

@@ -1,0 +1,11 @@
+package ByteBankComposto;
+
+public class Banco {
+
+	public static void main(String args) {
+		
+		Cliente marcelo = new Cliente();
+		
+	}
+	
+}
