@@ -1,8 +1,4 @@
 INDEX VERSION 1.131+/home/msr/estudo/java/.metadata/.plugins/org.eclipse.jdt.core
 1865797976.index
 1157105895.index
-3401604179.index
-3866821230.index
 283565351.index
-979069586.index
-606814479.index
