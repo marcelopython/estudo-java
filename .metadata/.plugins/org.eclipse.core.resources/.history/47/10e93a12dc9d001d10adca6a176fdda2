@@ -34,7 +34,7 @@ public class Product {
 				+ ", " 
 				+ this.quantity 
 				+ " units, Total: $ "
-				+ String.format("%.2f", this.totalValueInStock());
+				+ this.totalValueInStock();
 		
 	}
 	
