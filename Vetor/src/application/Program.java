@@ -34,6 +34,10 @@ public class Program {
 				
 			}
 			
+			for (Product obj : vect) {
+				System.out.println(obj.getName());
+			}
+			
 			double avg = sum / vect.length;
 			
 			System.out.printf("AVERAGE PRICE = %.2f%n", avg);
