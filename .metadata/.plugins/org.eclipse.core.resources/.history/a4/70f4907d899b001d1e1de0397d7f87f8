@@ -1,5 +1,0 @@
-class Conta {
-	
-	double saldo;
-	
-}

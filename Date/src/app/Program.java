@@ -3,6 +3,7 @@ package app;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
 
@@ -13,6 +14,10 @@ public class Program {
 //		https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/format/DateTimeFormatterBuilder.html
 		DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
+		DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME;
+		DateTimeFormatter fmt5 = DateTimeFormatter.ISO_INSTANT;
+		
 		
 		LocalDate d01 = LocalDate.now();
 		LocalDateTime d02 = LocalDateTime.now();
@@ -34,7 +39,7 @@ public class Program {
 		System.out.println("d01 = " + d01);
 		System.out.println("d02 = " + d02);
 		System.out.println("d03 = " + d03);
-		System.out.println("d04 = " + d04);
+		System.out.println("d04 = " + d04.format(fmt1));
 		System.out.println("d05 = " + d05);
 		System.out.println("d06 = " + d06);
 		System.out.println("d07 = " + d07);
@@ -43,6 +48,11 @@ public class Program {
 		System.out.println("d10 = " + d10);
 		System.out.println("d11 = " + d11);
 		
+		System.out.println("fmt1 = " + fmt1.format(d04));
+		System.out.println("d05 = " + d05.format(fmt4));
+		
+		System.out.println("d06 = " + fmt3.format(d06));
+		System.out.println("fmt5 = " + fmt5.format(d06));
 		
 		
 		
