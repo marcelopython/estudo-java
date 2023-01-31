@@ -1,9 +1,0 @@
-package variaveisEFluxos;
-
-public class Condicional {
-
-	public void static main(String[] args) {
-		
-	}
-	
-}
