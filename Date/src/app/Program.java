@@ -25,7 +25,15 @@ public class Program {
 		LocalDateTime d02 = LocalDateTime.now();
 		Instant d03 = Instant.now();
 		
-		LocalDate d04 = LocalDate.parse("2022-07-20");
+		LocalDate d04 = LocalDate.parse("01/08/2018", fmt1);
+		LocalDate d0teste = LocalDate.parse("20/08/2018", fmt1);
+		
+		String d = d04.getMonthValue()+"/"+d04.getYear();
+		String c = d0teste.getMonthValue()+"/"+d0teste.getYear();
+		
+		System.out.println(d.intern() == c.intern());
+		
+		
 		LocalDateTime d05 = LocalDateTime.parse("2022-07-20T23:59:59");
 		Instant d06 = Instant.parse("2022-07-20T01:30:26Z") ;
 		Instant  d07 = Instant.parse("2022-07-20T01:30:26-03:00");
@@ -72,7 +80,7 @@ public class Program {
 		System.out.println("R4 = "+ r4);
 		
 		
-		System.out.println("d04 dia = "+ d04.getDayOfMonth());
+		System.out.println("d04 dia = "+ d04.getMonthValue());
 		System.out.println("d04 mes = "+ d04.getMonthValue());
 		System.out.println("d04 ano = "+ d04.getYear());
 		
