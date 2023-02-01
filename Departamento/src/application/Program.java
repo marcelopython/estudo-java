@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 import entities.Department;
 import entities.HoursContract;
-import entities.Work;
+import entities.Worker;
 import entities.enums.WorkerLevel;
 
 public class Program {
@@ -42,13 +42,10 @@ public class Program {
 		Double salary = scanner.nextDouble();
 		
 //		Set work
-		Work work = new Work(name, WorkerLevel.valueOf(level), salary);
+		Worker work = new Worker(name, WorkerLevel.valueOf(level), salary, department);
 		
 		
 		System.out.println("How many contracts to this worker? ");
-		
-		List<HoursContract> hoursContract = new ArrayList<HoursContract>();
-
 
 		DateTimeFormatter formater = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		Integer totalContract = scanner.nextInt();
@@ -68,35 +65,17 @@ public class Program {
 			System.out.println("Duration (hours): ");
 			Integer hours = scanner.nextInt();
 			
-			hoursContract.add(new HoursContract(localDate, valuePerHours, hours)); 
+			work.addContract(new HoursContract(localDate, valuePerHours, hours));
 
 		}
-		
 		
 		scanner.nextLine();
 		System.out.println("Enter month and year to calculate income (MM/YYYY): ");
 		String dateSearch = scanner.nextLine();
 	
-		LocalDate localDateSearch = LocalDate.parse("01/"+dateSearch, formater); 
-		
-		String parseLocalDateSearch = localDateSearch.getMonthValue()+"/"+localDateSearch.getYear();
-
-		
-		List<HoursContract> hoursContractSearched = hoursContract.stream()
-			.filter(contract -> (String)(contract.getDate().getMonthValue()+"/"+contract.getDate().getYear()).intern() == parseLocalDateSearch.intern())
-			.collect(Collectors.toList());
-
-		Double amount = 0.0;
-		
-		for (HoursContract dataContract : hoursContractSearched) {
-			
-			amount += dataContract.totalValue();
-			
-		}
-		
 		System.out.println("Name: "+work.getName());
 		System.out.println("Department: "+department.getName());
-		System.out.println("Income for "+dateSearch+": "+ (work.getBaseSalary() + amount));
+		System.out.println("Income for "+dateSearch+": "+String.format("%.2f", work.income(dateSearch)));
 		
 		
 		scanner.close();
