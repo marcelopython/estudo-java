@@ -31,4 +31,7 @@
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.text.ParseException"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="entities.Account"/>
+    <fullyQualifiedTypeName name="entities.BusinessAccount"/>
+    <fullyQualifiedTypeName name="entities.SavingsAccount"/>
 </qualifiedTypeNameHistroy>
