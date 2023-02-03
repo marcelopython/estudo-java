@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Program {
 
 	public static void main(String[] args) {
-		
+//		VERSÃO RUIM
 //		File file = new File("/home/msr/estudo/java/file/src/application/in.txt");
 //		Scanner sc = null;
 //		
@@ -28,15 +28,49 @@ public class Program {
 //				sc.close();	
 //			}
 //		}
+//		
+//		VERSÃO MAIS OU MENOS
+//		String path = "/home/msr/estudo/java/file/src/application/in.txt";
+//		FileReader fr = null;
+//		BufferedReader br = null;
+//		
+//		try {
+//			
+//			fr = new FileReader(path);
+//			br = new BufferedReader(fr);
+//			
+//			String line = br.readLine();
+//			
+//			while(line != null) {
+//				System.out.println(line);
+//				line = br.readLine();
+//			}
+//			
+//			
+//		}catch(IOException e) {
+//			System.out.println("Error: "+ e.getMessage()); 
+//			
+//		}finally {
+//			try {
+//				if(br != null) {
+//					br.close();
+//				}
+//				
+//				if(fr != null) {
+//					fr.close();
+//				}	
+//			}catch(IOException e) {
+//				e.printStackTrace();
+//			}
+//			
+//		}
 		
+		
+//		MELHOR VERSÃO
 		String path = "/home/msr/estudo/java/file/src/application/in.txt";
-		FileReader fr = null;
-		BufferedReader br = null;
+
 		
-		try {
-			
-			fr = new FileReader(path);
-			br = new BufferedReader(fr);
+		try (BufferedReader br = new BufferedReader(new FileReader(path))){
 			
 			String line = br.readLine();
 			
@@ -49,21 +83,7 @@ public class Program {
 		}catch(IOException e) {
 			System.out.println("Error: "+ e.getMessage()); 
 			
-		}finally {
-			try {
-				if(br != null) {
-					br.close();
-				}
-				
-				if(fr != null) {
-					fr.close();
-				}	
-			}catch(IOException e) {
-				e.printStackTrace();
-			}
-			
 		}
-		
 		
 	}
 
