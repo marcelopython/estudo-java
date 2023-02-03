@@ -1,14 +1,49 @@
 package application;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class Program {
 
 	public static void main(String[] args) {
+//      Ler arquivo
+//		readFile();
+		
+//		Escrever aqruivo
+		fileWriter();
+
+		
+		
+	}
+	
+	public static void folder() {
+		
+	}
+	
+	public static void fileWriter() {
+		String[] lines = new String[] {"Good morning", "Good afternoon", "Good night"};
+		String path = "/home/msr/estudo/java/file/src/application/out.txt";
+
+//		Try-with-resources
+		try(BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))){
+			
+			for (String line : lines) {
+				bw.write(line);
+				bw.newLine();
+			}
+			
+		}catch(IOException e) {
+			System.out.println("Error: "+e.getMessage());
+		}
+		
+	}
+	
+	public static void readFile() {
 //		VERSÃO RUIM
 //		File file = new File("/home/msr/estudo/java/file/src/application/in.txt");
 //		Scanner sc = null;
@@ -84,7 +119,6 @@ public class Program {
 			System.out.println("Error: "+ e.getMessage()); 
 			
 		}
-		
 	}
 
 }
