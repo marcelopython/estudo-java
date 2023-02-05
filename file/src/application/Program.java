@@ -41,6 +41,22 @@ public class Program {
 			System.out.println(folder);
 			
 		}
+//		/home/msr/estudo/java/file/src/application/
+
+		
+		File[] files = path.listFiles(File::isFile);
+		System.out.println();
+		System.out.println("FILES");
+		System.out.println();
+		for(File file : files) {
+			System.out.println(file);
+			System.out.println("name: "+file.getName());
+			System.out.println("parent: "+file.getParent());
+		}
+		
+		boolean success = new File(strPath + "/subdir").mkdir();
+		
+		System.out.println("Diretorio created successfully: " +success);
 		
 		sc.close();
 		
