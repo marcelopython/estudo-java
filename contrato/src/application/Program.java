@@ -6,10 +6,12 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Contract;
+import entities.Installment;
+import services.ContractService;
 
 public class Program {
 
-	public static void mani(String[] args) {
+	public static void main(String[] args) {
 		
 		Locale.setDefault(Locale.US);
 		
@@ -30,8 +32,17 @@ public class Program {
 		Contract contrat = new Contract(number, date, totalValue);
 		
 		System.out.print("Entre com o numero de parcelas: ");
-		int isntallments = sc.nextInt();
+		int installments = sc.nextInt();
 
+		ContractService contractService = new ContractService(null);
+		
+		contractService.processContract(contrat, installments);
+		
+		System.out.println("Parcelas: ");
+		
+		for(Installment installment : contrat.getInstalments()) {
+			System.out.println(installment);
+		}
 		
 		sc.close();
 		
