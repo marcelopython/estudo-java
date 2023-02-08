@@ -77,6 +77,11 @@ public class Program {
 		//Compara as referencias de memoria e não o conteudo
 		System.out.println(c1 == c2);
 		
+		//Faz o tratamento de forma especial
+		String t1 = "test1";
+		String t2 = "test1";
+		System.out.println(t1 == t2);
+
 	}
 	
 	
