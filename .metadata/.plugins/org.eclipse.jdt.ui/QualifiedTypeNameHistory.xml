@@ -51,4 +51,6 @@
     <fullyQualifiedTypeName name="services.ContractService"/>
     <fullyQualifiedTypeName name="services.PaypalService"/>
     <fullyQualifiedTypeName name="servicies.PrintService"/>
+    <fullyQualifiedTypeName name="entities.Shape"/>
+    <fullyQualifiedTypeName name="entities.Rectangle"/>
 </qualifiedTypeNameHistroy>
