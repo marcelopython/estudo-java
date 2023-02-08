@@ -50,4 +50,5 @@
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="services.ContractService"/>
     <fullyQualifiedTypeName name="services.PaypalService"/>
+    <fullyQualifiedTypeName name="servicies.PrintService"/>
 </qualifiedTypeNameHistroy>
